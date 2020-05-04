@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        
+            
+
+        </style>
+
+        <link href="css/quiz3.css" rel="stylesheet">
+        <script src="js/quiz3_dragdrop.js"></script>
+        <script src="js/jsmemorygame.js"></script>
+    </head>
+        <body>
+            <!-- <h2 id="app_status">App status...</h2> -->
+            
+
+            <div id="quizContainer" class="container" >
+                <div class="title">Third quiz</div>
+                
+                <div id="form1">
+                    <div id="question" class="question">
+                        <br>
+                        Fill the gray container with JS events by dragging and dropping the correct options below.
+                    </div>
+
+                    <div class="quizBody" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                    
+                        <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" >
+
+                                <div id="feedback-dragdrop" style="display: none"></div>
+                        </div>
+                    
+                        <div id="object1" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">onlistening</div>
+                        <div id="object2" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">onclick</div>
+                        <div id="object3" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">onabort</div>
+                        <div id="object4" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">onseen</div>
+                        <div id="object5" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">ondrag</div>
+
+                    </div>
+        
+                    <div class="checkAnswer">
+                        <button id="prevButton" class="exit-btn" onclick="prevAnswer()">Prev</button>    
+                        <button id="checkButtonDrag" class="check-btn" onclick="checkAnswer()">Check</button>
+                        <button id="nextButton" class="next-btn" onclick="nextQuiz()">Next</button>
+                    </div>
+                </div>
+
+                <div id="form2" style="display: none">
+                    <div id="question" class="question">
+                        <br>
+                        Fill the gaps in the following statements:
+                    </div>
+
+                    <div class="quizBody" style="text-align: left;" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                        <br>
+                           
+                        <p><b>1.</b> Javascript code should be inside of the &lt; &nbsp;<input type="text" id="form2-input0" class="form-control">&nbsp;&gt; HTML element.</p>
+                        <p><b>2.</b> To create a function you need to write the javascript's <input type="text" class="form-control" id="form2-input1"> keyword preceeding the name of the function.</p>
+                        <p><b>3.</b> JavaScript is a lightweight, interpreted programming language with object-<!--oriented--><input type="text" id="form2-input2" class="form-control"> capabilities that 
+                            allows you to build interactivity into otherwise static HTML pages.</p>
+                        <p><b>4.</b> JavaScript is a case-<!--sensitive--><input type="text" id="form2-input3" class="form-control"> language. This means that language 
+                            keywords, variables, function names, and any other identifiers must always be 
+                            typed with a consistent <input type="text" id="form2-input4" class="form-control"><!--capitalization--> of letters.</p>
+
+                    </div>
+        
+                    <div class="checkAnswer">
+                        <button id="prevButton" class="exit-btn" onclick="prevQuiz()">Prev</button>    
+                        <button id="checkButtonForm2" class="check-btn" onclick="checkAnswerForm2()">Check</button>
+                        <button id="nextButton" class="next-btn" onclick="nextQuiz()">Next</button>
+                    </div>
+                </div>
+
+                <div id="form3" style="display: none">
+                        <div id="question" class="question">
+                            <br>
+                            Select the correct option for the following statements:
+                        </div>
+    
+                        <div class="quizBody" style="text-align: left;" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                            <br>
+                                        
+                            <p><b>1.</b> Where is the correct place to insert a JavaScript?
+                                &nbsp;
+                                    <select id="list0" class="form-control">
+                                        <option>&lt;body&gt;</option>
+                                        <option>&lt;head&gt;</option>
+                                        <option>&lt;head&gt; and &lt;body&gt;</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+
+                            <p><b>2.</b> What is the correct syntax for referring to an external script called "xxx.js"?
+                                &nbsp;
+                                    <select id="list1" class="form-control">
+                                        <option>&lt;script href="xxx.js"&gt;</option>
+                                        <option>&lt;script name="xxx.js"&gt;</option>
+                                        <option>&lt;script src="xxx.js"&gt;</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+
+                            <p><b>3.</b> The external JavaScript file must contain the &lt;script&gt; tag
+                                &nbsp;
+                                    <select id="list2" class="form-control">
+                                        <option>True</option>
+                                        <option>False</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+                            
+                            <p><b>4.</b> How do you write "Hello World" in an alert box?
+                                &nbsp;
+                                    <select id="list3" class="form-control">
+                                        <option>alert("Hello World");</option>
+                                        <option>msg("Hello World");</option>
+                                        <option>msgBox("Hello World");</option>
+                                        <option>alertBox("Hello World");</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+
+                            <p><b>5.</b> How do you call a function named "myFunction"?
+                                &nbsp;
+                                    <select id="list4" class="form-control">
+                                        <option>call myFunction()</option>
+                                        <option>call function myFunction()</option>
+                                        <option>myFunction()</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+
+                            <p><b>6.</b> Which event occurs when the user clicks on an HTML element?
+                                &nbsp;
+                                    <select id="list5" class="form-control">
+                                        <option>onclick</option>
+                                        <option>onchange</option>
+                                        <option>onmouseclick</option>
+                                        <option>onmouseclick</option>
+                                    </select>
+                                &nbsp;
+                            </p>
+                        </div>
+            
+                        <div class="checkAnswer">
+                            <button id="prevButton" class="exit-btn" onclick="prevQuiz()">Prev</button>
+                            <button id="checkButtonForm3" class="check-btn" onclick="checkAnswerForm3()">Check</button>
+                            <button id="nextButton" class="next-btn" onclick="nextQuiz()">Next</button>
+                        </div>
+                </div>
+
+                <div id="form4" style="display: none">
+                        <div id="question" class="question">
+                            <br>
+                            Time to have some fun with this javascript keyword memory game!
+                        </div>
+    
+                        <div class="quizBody" style="text-align: left;" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)">
+                                <div id="memory_board"></div>
+                                <script>newBoard();</script>
+                        </div>
+            
+                        <div class="checkAnswer">
+                            <button id="prevButton" class="exit-btn" onclick="prevQuiz()">Prev</button>
+                            <button id="nextButton" class="next-btn" onclick="nextQuiz()">Next</button>
+                        </div>
+                </div>
+                
+                <div id="exit-div">
+                    <button id="exitButton"  onclick="location.href = 'index.html'">Exit</button>
+                </div>
+            </div>
+            <br>
+            
+        </body>
+
+        <script src="js/quiz3.js"></script>
+
+</html>

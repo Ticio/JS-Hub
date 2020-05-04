@@ -1,0 +1,35 @@
+.welcome-area{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.welcome{
+    font-family: Pacifico;
+	font-size: 50px;
+}
+
+.small-container div{
+	background: white;
+	margin: 0 auto;
+    width: 530px;
+    border: 1px solid rgba(255,255,255, 0.5);
+    border-radius: 3px;
+    padding: 10px;
+    color: #333;;
+}
+
+.description
+{
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0, 0.5);
+    border-radius: 10px;
+    padding: 5px;
+    color: #333;
+    background: white !important;
+}
+
+.btn{
+	color: #fff;
+	background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.9)),url('../images/background.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.9)), url('../images/background.jpg');
+}

@@ -1,0 +1,74 @@
+.course{
+    width: 236px !important;
+    height: 180px !important;;
+    margin: 10px;
+    border: 5px solid white;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    background-position: center center;
+	background-size: cover;
+}
+
+#udemy{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/udemy.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/udemy.jpg');
+}
+
+#udacity{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/udacity.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/udacity.jpg');
+}
+
+#coursera{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/coursera.png');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/coursera.png');
+}
+
+#edx{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/edx.png');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/edx.png');
+}
+
+/***************************** CSS for the library ***********************************/
+
+#book1{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book1.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book1.jpg');
+}
+
+#book2{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book2.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book2.jpg');
+}
+
+#book3{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book3.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book3.jpg');
+}
+
+#book4{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book4.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book4.jpg');
+}
+
+
+#book5{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book5.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book5.jpg');
+}
+
+#book6{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book6.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book6.jpg');
+}
+
+#book7{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book7.jpg');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book7.jpg');
+}
+
+#book8{
+	background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url('../images/book8.png');
+	background-image: -moz-linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('../images/book8.png');
+}

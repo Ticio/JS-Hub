@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Quiz 1</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="css/quiz1.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	</head>
+
+	<body>
+		
+		<div id="quizContainer">
+            
+            <div class="title">First quiz</div>
+            <div id="question" class="question"></div>
+            
+			<div id="quizBody">
+                <div class="answers">
+                    <label class="option" id="answer1"><input type="radio" class="radio" name="option" value="1"><span id="opt1"> </span></label>
+                    <label class="option" id="answer2"><input type="radio" class="radio" name="option" value="2"><span id="opt2"> </span></label>
+                    <label class="option" id="answer3"><input type="radio" class="radio" name="option" value="3"><span id="opt3"> </span></label>
+                    <label class="option" id="answer4"><input type="radio" class="radio" name="option" value="4"><span id="opt4"> </span></label>
+                </div>
+
+                <div class="feedback">
+                    <p id="explanation"></p>
+                </div>
+            </div>
+
+            <div class="checkAnswer">
+                <button id="exitButton" class="exit-btn" onclick="location.href = 'index.html'">Exit</button>
+                <button id="checkButton" class="check-btn" onclick="checkQuestion()">Check</button>
+                <button id="nextButton" class="next-btn" onclick="nextQuestion()" style="display: none">Next</button>
+                <button id="quiz2Button" class="quiz2" onclick="location.href = 'quiz2.html'" style="display: none">Next quiz</button>
+                <button id="score" class="score" onclick=""></button>
+            </div>
+
+		</div>
+        
+        <div class="buttons">
+            
+        </div>
+
+
+		
+		<script src="js/quiz1.js"></script>
+	
+	</body>
+</html>
